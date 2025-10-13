@@ -13,7 +13,7 @@
 # Modify default IP
 #sed -i 's/192.168.1.1/192.168.50.5/g' package/base-files/files/bin/config_generate
 
-sed -i '/KERNEL_PATCHVER/c KERNEL_PATCHVER:=6.1' target/linux/x86/Makefile
+sed -i '/KERNEL_PATCHVER/c KERNEL_PATCHVER:=6.6' target/linux/x86/Makefile
 
 #替换终端为bash
 sed -i 's/\/bin\/ash/\/bin\/bash/' package/base-files/files/etc/passwd
